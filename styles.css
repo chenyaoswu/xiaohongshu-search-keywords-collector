@@ -1,0 +1,93 @@
+.xhs-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    z-index: 1000001;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .xhs-keyword-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 999999;
+  }
+  
+  .dialog-content button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .dialog-content button:hover {
+    opacity: 0.9;
+  }
+  
+  .collect-all {
+    background: #ff2442;
+    color: white;
+  }
+  
+  .collect-partial {
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  .xhs-keyword-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 999999;
+}
+
+.dialog-content button {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+    text-align: left;
+    position: relative;
+}
+
+.dialog-content button:after {
+    content: attr(class);
+    position: absolute;
+    right: 10px;
+    color: #999;
+    font-size: 12px;
+}
+
+.collect-all {
+    background: #ff2442;
+    color: white;
+}
+
+.collect-partial {
+    background: #f5f5f5;
+    color: #333;
+}
+

@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "小红书关键词采集",
+    "version": "1.0",
+    "description": "采集小红书搜索下拉框关键词",
+    "permissions": [
+      "activeTab",
+      "clipboardWrite",
+      "commands"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.xiaohongshu.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"],
+        "run_at": "document_end"
+      }
+    ],
+    "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Shift+Ctrl+G"
+        },
+        "description": "采集关键词"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
